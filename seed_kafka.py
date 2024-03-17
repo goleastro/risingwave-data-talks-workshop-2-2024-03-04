@@ -69,7 +69,7 @@ def send_records_to_kafka(env, records, real_time=False):
             record['tpep_pickup_datetime'] = tpep_pickup_datetime
             record['tpep_dropoff_datetime'] = tpep_dropoff_datetime
             time.sleep(random.randrange(0, 100) / 1000)
-            if i % 100 == 0:
+            if i % 1 == 0:
                 logging.info(f"Sent {i} records")
 
         message = record.to_json()

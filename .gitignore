@@ -4,5 +4,5 @@ dashboards/
 grafana*
 prometheus*
 risingwave.toml
-homework/
+#homework/
 .DS_Store
